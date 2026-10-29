@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sirvete National News</title><meta name="description" content="News and official data for people living in Spain."><link rel="alternate" type="application/rss+xml" title="Sirvete National News" href="feed.xml"><style>:root{--bg:#f7f5f0;--card:#fff;--ink:#1b1a18;--muted:#68645c;--line:#e3ded3;--accent:#c4302b;--soft:#f1ede4;--ok:#2e7d32;--warn:#b26a00}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141413;--card:#1e1e1c;--ink:#eeebe4;--muted:#9c978d;--line:#33312d;--accent:#ef5a4f;--soft:#24231f;--ok:#7bc67e;--warn:#f2b84b}}
+:root[data-theme="dark"]{--bg:#141413;--card:#1e1e1c;--ink:#eeebe4;--muted:#9c978d;--line:#33312d;--accent:#ef5a4f;--soft:#24231f;--ok:#7bc67e;--warn:#f2b84b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header{background:var(--card);border-bottom:3px solid var(--accent)}
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:18px 0 10px}
+.brand{font:700 26px Georgia,serif;text-decoration:none;letter-spacing:-.3px}.brand span{color:var(--accent)}
+nav{display:flex;gap:4px;overflow-x:auto;padding-bottom:10px}nav a{text-decoration:none;color:var(--muted);padding:6px 10px;border-radius:99px;white-space:nowrap;font-size:14px}
+nav a:hover,nav a.on{background:var(--soft);color:var(--ink)}
+main{padding:22px 0 70px}
+h1{font:700 34px/1.15 Georgia,serif;margin:0 0 6px}h2{font:700 22px/1.3 Georgia,serif;margin:30px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.lede{color:var(--muted);margin:0 0 18px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 8px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;display:block}
+.tile b{display:block;font-size:20px;line-height:1.2}.tile span{font-size:12px;color:var(--muted)}.tile i{font-style:normal;font-size:12px}
+.up{color:var(--accent)}.down{color:var(--ok)}
+.more{font-size:13px;color:var(--muted);margin:6px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.card.lead{grid-column:1/-1;padding:24px}.card.lead h3{font-size:30px}
+.card h3{margin:0;font:700 19px/1.3 Georgia,serif}.card h3 a{text-decoration:none}.card h3 a:hover{color:var(--accent)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tag{font:700 11px -apple-system,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+.when{font-size:12px;color:var(--muted);margin-top:auto}
+.data{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.dcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.dcard h3{margin:0 0 2px;font:700 18px Georgia,serif}.dcard .asof{font-size:12px;color:var(--muted);margin-bottom:10px}
+.big{font-size:30px;font-weight:700;line-height:1.1}.big small{font-size:14px;font-weight:400;color:var(--muted)}
+.kv{display:grid;grid-template-columns:1fr auto;gap:2px 12px;font-size:14px;margin:8px 0}.kv span:nth-child(2n){text-align:right;font-variant-numeric:tabular-nums}
+.kv span.h{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em;grid-column:1/-1;margin-top:6px;text-align:left!important}
+.kv:empty{display:none}.kvh{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em;margin:10px 0 2px}
+.list{margin:0 0 8px;padding:0;list-style:none;font-size:14px}.list li{padding:3px 0;border-bottom:1px dashed var(--line)}
+.list .h{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em;border:0;padding-top:8px}
+.bars{display:flex;align-items:flex-end;gap:2px;height:70px;margin:10px 0 2px}.bars i{flex:1;background:var(--muted);border-radius:2px 2px 0 0;opacity:.45}
+.bars i.lo{background:var(--ok);opacity:1}.bars i.hi{background:var(--accent);opacity:1}
+.axis{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+.warn{border-left:4px solid var(--warn);padding:6px 10px;margin:6px 0;background:var(--soft);border-radius:0 8px 8px 0;font-size:14px}
+.warn.red{border-color:var(--accent)}
+.src{font-size:12px;color:var(--muted);margin-top:10px}.src a{color:var(--muted)}
+.note{font-size:13px;color:var(--muted);background:var(--soft);border-radius:10px;padding:10px 14px;margin:18px 0}
+footer{border-top:1px solid var(--line);padding:18px 0;font-size:13px;color:var(--muted)}
+@media (max-width:640px){h1{font-size:28px}.card.lead h3{font-size:24px}}</style></head><body><header><div class="wrap"><div class="top"><a class="brand" href="index.html">Sirvete <span>National News</span></a><span class="lede" style="margin:0;font-size:14px">News and data for people living in Spain</span></div><nav><a href="index.html" class=on>Home</a><a href="today.html">Spain Today</a><a href="index.html#visas-residency">Visas &amp; Residency</a><a href="index.html#tax-money">Tax &amp; Money</a><a href="index.html#property-housing">Property &amp; Housing</a><a href="index.html#travel-transport">Travel &amp; Transport</a><a href="index.html#health">Health</a><a href="index.html#weather-emergencies">Weather &amp; Emergencies</a><a href="index.html#crime-safety">Crime &amp; Safety</a><a href="index.html#economy-jobs">Economy &amp; Jobs</a></nav></div></header><main><div class="wrap"><div class="strip"><a class="tile" href="today.html"><b>€1.732</b><span>Petrol per litre</span> </a><a class="tile" href="today.html"><b>€1.898</b><span>Diesel per litre</span> </a><a class="tile" href="today.html"><b>€0.240</b><span>Electricity per kWh today</span> cheapest 12:00</a><a class="tile" href="today.html"><b>€1.194</b><span>£1 buys</span> <i class="flat">unchanged</i></a><a class="tile" href="today.html"><b>3.25%</b><span>Euribor, September 2026</span> <i class="up">▲ 0.29 pts</i></a><a class="tile" href="today.html"><b>4.3%</b><span>Inflation, August 2026</span> <i class="down">▼ 0.6 pts</i></a></div><div class="more"><a href="today.html">All of today's data →</a></div><h2 style="margin-top:6px">Latest</h2><div class="grid"><div class="card"><p>Our first articles are on their way.</p></div></div></div></main><footer><div class="wrap">© 2026 Sirvete National News · Sirvete SL. Data pages are compiled by code from official sources; articles are written with AI assistance and approved by an editor. <a href="feed.xml">RSS</a></div></footer></body></html>
